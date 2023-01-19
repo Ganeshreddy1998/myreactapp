@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
-import CommonlyBookedTest from "./CommonlyBookedTest";
+import CommonlyBookedTest from "./CommonlyBookedTest/CommonlyBookedTest";
 import SearchBar from "../../components/molecules/SearchBar/SearchBar";
 import BookNowContainer from "../../components/organisms/BookNowContainer/BookNowContainer";
 import HeadingLinkLayout from "../../components/organisms/HeadingLinklayout/HeadingLinkLayout";

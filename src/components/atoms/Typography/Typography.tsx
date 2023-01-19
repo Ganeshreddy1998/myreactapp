@@ -14,7 +14,7 @@ interface StyledTextTypes {
   color?: "white";
 }
 
-const StyledText = styled(Text)<StyledTextTypes>`
+export const StyledText = styled(Text)<StyledTextTypes>`
   ${(props) =>
     props.color && {
       color: props.color,
@@ -22,7 +22,7 @@ const StyledText = styled(Text)<StyledTextTypes>`
 `;
 
 const Typography = (props: propTypes) => {
-  const { type,children, color, style } = props;
+  const { type, children, color, style } = props;
   switch (type) {
     case "lg":
       return (

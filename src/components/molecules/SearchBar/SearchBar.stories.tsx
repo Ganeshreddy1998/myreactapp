@@ -17,5 +17,5 @@ const Template: ComponentStory<typeof SearchBar> = (args) => (
 
 export const Search = Template.bind({});
 Search.args = {
-  placeholder: "Header",
+  placeholder: "Search for lab test, packages",
 };
