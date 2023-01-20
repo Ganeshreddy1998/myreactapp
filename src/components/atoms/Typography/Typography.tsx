@@ -26,25 +26,45 @@ const Typography = (props: propTypes) => {
   switch (type) {
     case "lg":
       return (
-        <StyledText variant="h1" color={color} style={style}>
+        <StyledText
+          variant="h1"
+          color={color}
+          style={style}
+          data-testid="typography-test"
+        >
           {children}
         </StyledText>
       );
     case "md":
       return (
-        <StyledText variant="h2" color={color} style={style}>
+        <StyledText
+          variant="h2"
+          color={color}
+          style={style}
+          data-testid="typography-test"
+        >
           {children}
         </StyledText>
       );
     case "sm":
       return (
-        <StyledText variant="body1" color={color} style={style}>
+        <StyledText
+          variant="body1"
+          color={color}
+          style={style}
+          data-testid="typography-test"
+        >
           {children}
         </StyledText>
       );
     case "xs":
       return (
-        <StyledText variant="body2" color={color} style={style}>
+        <StyledText
+          variant="body2"
+          color={color}
+          style={style}
+          data-testid="typography-test"
+        >
           {children}
         </StyledText>
       );

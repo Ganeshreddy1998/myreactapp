@@ -52,12 +52,22 @@ const Button = (props: propTypes) => {
   const { variant, children, onClick } = props;
   switch (variant) {
     case "white":
-      return <StyledButton onClick={onClick}>{children}</StyledButton>;
+      return (
+        <StyledButton onClick={onClick} data-testid="custom-button">
+          {children}
+        </StyledButton>
+      );
     case "blue":
-      return <StyledBlueButton onClick={onClick}>{children}</StyledBlueButton>;
+      return (
+        <StyledBlueButton onClick={onClick} data-testid="custom-button">
+          {children}
+        </StyledBlueButton>
+      );
     case "red_text":
       return (
-        <StyledErrorButton onClick={onClick}>{children}</StyledErrorButton>
+        <StyledErrorButton onClick={onClick} data-testid="custom-button">
+          {children}
+        </StyledErrorButton>
       );
     default:
       return null;

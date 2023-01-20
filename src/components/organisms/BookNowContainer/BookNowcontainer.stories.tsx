@@ -17,20 +17,6 @@ const Template: ComponentStory<typeof BookNowcontainer> = (args) => (
 
 export const Header = Template.bind({});
 Header.args = {
-  title: "Header",
-};
-
-export const Title = Template.bind({});
-Title.args = {
-  title: "title",
-};
-
-export const Subtitle = Template.bind({});
-Subtitle.args = {
+  title: "60% off on your first order",
   buttonText: "Subtitle",
-};
-
-export const button = Template.bind({});
-button.args = {
-  buttonLink: "#",
 };
