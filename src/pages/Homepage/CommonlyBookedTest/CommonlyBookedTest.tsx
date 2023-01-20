@@ -11,13 +11,13 @@ import {
   Checkbox,
 } from "@mui/material";
 import React, { useState, FC } from "react";
-import Icon from "../../components/atoms/Icon/Icon";
-import Tag from "../../components/atoms/Tag/Tag";
-import Typography from "../../components/atoms/Typography/Typography";
-import FullPageLayout from "../../components/organisms/FullPageLayout/FullPageLayout";
-import HeadingLinkLayout from "../../components/organisms/HeadingLinklayout/HeadingLinkLayout";
-import Gutter from "../../components/templates/Gutter";
-import { colors } from "../../constants";
+import Icon from "../../../components/atoms/Icon/Icon";
+import Tag from "../../../components/atoms/Tag/Tag";
+import Typography from "../../../components/atoms/Typography/Typography";
+import FullPageLayout from "../../../components/organisms/FullPageLayout/FullPageLayout";
+import HeadingLinkLayout from "../../../components/organisms/HeadingLinklayout/HeadingLinkLayout";
+import Gutter from "../../../components/templates/Gutter";
+import { colors } from "../../../constants";
 
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
@@ -33,22 +33,20 @@ const items = [
   { icon: "throid", text: "Thyroid Test", onClick: () => {} },
   { icon: "lipid", text: "Lipid Profile", onClick: () => {} },
 ];
-
-// interface stepProp{
-//   obj
-// }
-
 const CommonlyBookedTest = () => {
   const [steps, setSteps] = useState([{ step: 1, label: "" }, { step: 2 }]);
   const [currentStep, setCurrentStep] = useState(1);
   const [currentLabel, setCurrentLabel] = useState("");
-  console.log({ steps });
+  // console.log({ steps });
   const [showPage, setShowPage] = useState(false);
   return (
     <div>
       <FullPageModal
         open={showPage}
-        handleClose={() => setShowPage(false)}
+        handleClose={() => {
+          setShowPage(false);
+          setCurrentStep(1);
+        }}
         currentStep={currentStep}
         setCurrentStep={setCurrentStep}
         currentLabel={currentLabel}
@@ -75,7 +73,9 @@ const CommonlyBookedTest = () => {
                     } else return step;
                   });
                 });
-                setShowPage(true);
+                if (item.text === "Covid RTPCR") {
+                  setShowPage(true);
+                }
                 // setSteps(steps.map(step => ))
               }}
             >
@@ -135,8 +135,8 @@ const FullPageModal: FC<FullPageModalprops> = ({
 }) => {
   const headItems = [
     { icon: "home", label: "Home visit" },
-    { icon: "test-tube", label: "1 test included" },
-    { icon: "test-tube", label: "Free consultation" },
+    { icon: "test", label: "1 test included" },
+    { icon: "doctor", label: "Free consultation" },
     { icon: "reports", label: "Online reports" },
   ];
   const testInfoList = [
@@ -185,14 +185,14 @@ const FullPageModal: FC<FullPageModalprops> = ({
         justifyContent="center"
         sx={{ my: 4 }}
       >
-        <Grid item md={8}>
-          <Card sx={{ p: "24px 12px" }}>
+        <Grid item md={5}>
+          <Card sx={{ p: "24px 18px" }}>
             {currentStep === 1 ? (
               <>
                 <Text variant="subtitle1">{currentLabel}</Text>
                 <Grid container sx={{ my: 2 }}>
                   {headItems.map((item, i) => (
-                    <Grid item xs={6} md={3}>
+                    <Grid item xs={6} md={3} key={i}>
                       <Grid container alignItems="center">
                         <IconWrap
                           container

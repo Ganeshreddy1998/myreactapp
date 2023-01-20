@@ -11,7 +11,12 @@ interface props {
 
 const Tag: FC<props> = ({ children, active, onClick }) => {
   return (
-    <StyledChip label={children} onClick={onClick} active={active}></StyledChip>
+    <StyledChip
+      label={children}
+      onClick={onClick}
+      active={active}
+      data-testid="chip-tag"
+    ></StyledChip>
   );
 };
 

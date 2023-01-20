@@ -4,7 +4,6 @@ import Icon from "./Icon";
 export default {
   title: "Atoms/Icon/Icon",
   component: Icon,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     // backgroundColor: { control: "color" },
   },
@@ -13,5 +12,5 @@ export default {
 const Template: ComponentStory<typeof Icon> = (args) => <Icon {...args} />;
 
 export const Primary = Template.bind({
-  name: "covid",
+  name: "{name}",
 });

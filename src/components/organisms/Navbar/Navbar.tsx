@@ -31,13 +31,10 @@ const Navbar = () => {
           </Grid>
           <Grid item container alignItems="center" justifyContent="end" lg={3}>
             <IconButton>
-              <Icon name="cart" />
-            </IconButton>
-            <IconButton>
               <Icon name="user" />
             </IconButton>
             <IconButton>
-              <Icon name="cart" />
+              <Icon name="shopping-cart" />
             </IconButton>
           </Grid>
         </Grid>

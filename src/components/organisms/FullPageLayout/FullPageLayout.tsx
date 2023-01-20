@@ -73,7 +73,7 @@ const FullPageLayout: React.FC<props> = ({
                       }
                     }}
                   >
-                    <Icon name="back-arrow" />
+                    <Icon name="back_arrow" />
                     <Typography
                       variant="subtitle2"
                       sx={{ ml: "7px", color: colors.blue_500 }}
@@ -108,11 +108,15 @@ const FullPageLayout: React.FC<props> = ({
                     <Button
                       variant="blue"
                       onClick={() => {
-                        setCurrentStep(currentStep + 1);
+                        if (currentStep === 1) {
+                          setCurrentStep(currentStep + 1);
+                        } else {
+                          handleClose();
+                        }
                       }}
                     >
                       <Typography variant="subtitle2">
-                        {currentStep === 1 ? "Add Patient " : "Next"}
+                        {currentStep === 1 ? "Add Patient " : "Go back to Home"}
                       </Typography>
                     </Button>
                   </Grid>
