@@ -13,8 +13,6 @@ const Root = styled.div`
 `;
 
 const Navbar = () => {
-  const location = useLocation();
-  console.log({ location });
   return (
     <Root>
       <Gutter>
@@ -23,7 +21,7 @@ const Navbar = () => {
             <img src="/images/logo_name.png" />
           </Grid>
           <Grid item lg={3}>
-            <Link href="/" active={location.pathname === "/"}>
+            <Link href="/" active>
               Home
             </Link>
             <Link href="/reports">Reports</Link>

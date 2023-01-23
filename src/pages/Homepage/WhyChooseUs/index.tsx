@@ -17,7 +17,7 @@ const items = [
 ];
 const WhyChooseUs = () => {
   return (
-    <FullWidthColoredContainer title=" Why Choose Us">
+    <FullWidthColoredContainer title="Why Choose Us">
       <Grid container spacing={2}>
         {items.map((item, i) => (
           <Grid item xs={4}>
