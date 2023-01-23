@@ -1,5 +1,4 @@
 import { render, screen } from "@testing-library/react";
-//import Link from "./Link";
 import Tag from "./Tag";
 import { colors } from "../../../constants";
 

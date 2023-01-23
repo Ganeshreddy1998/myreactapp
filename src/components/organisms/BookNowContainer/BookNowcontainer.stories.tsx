@@ -18,5 +18,7 @@ const Template: ComponentStory<typeof BookNowcontainer> = (args) => (
 export const Header = Template.bind({});
 Header.args = {
   title: "60% off on your first order",
-  buttonText: "Subtitle",
+  subTitle: "Your health is our first priority",
+  buttonText: "Book Now",
+  imageUrl: "images/family.png",
 };
