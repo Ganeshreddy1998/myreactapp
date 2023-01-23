@@ -18,7 +18,7 @@ const Navbar = () => {
       <Gutter>
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item lg={3}>
-            <img src="/images/logo_name.png" />
+            <img src="/images/logo_name.png" alt="logo" data-testid="logo" />
           </Grid>
           <Grid item lg={3}>
             <Link href="/" active>

@@ -21,4 +21,11 @@ describe("Navbar", () => {
       "/appointments"
     );
   });
+
+  test("Navbar should have image with correct logo", () => {
+    render(<Navbar></Navbar>);
+    const logo = screen.getByTestId("logo");
+    expect(logo).toHaveAttribute("src", "/images/logo_name.png");
+    expect(logo).toHaveAttribute("alt", "logo");
+  });
 });
