@@ -33,4 +33,15 @@ describe("Buttom Atom", () => {
     const el = screen.getByTestId("custom-button");
     expect(el).toHaveStyle(`backgroundColor:white`);
   });
+
+  test("button with variant red_text should be shown have red text", () => {
+    render(
+      <Button variant="red_text" onClick={() => {}}>
+        ButtonText
+      </Button>
+    );
+    const el = screen.getByTestId("custom-button");
+    expect(el).toHaveStyle(`colors:${colors.red_200}`);
+  });
+  
 });
