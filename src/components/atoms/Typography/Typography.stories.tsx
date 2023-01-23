@@ -19,18 +19,3 @@ export const Header = Template.bind({});
 Header.args = {
   children: "Header",
 };
-
-export const Title = Template.bind({});
-Title.args = {
-  children: "Title",
-};
-
-export const Subtitle = Template.bind({});
-Subtitle.args = {
-  children: "Subtitle",
-};
-
-export const Body = Template.bind({});
-Body.args = {
-  children: "Lorem  quis",
-};
