@@ -81,10 +81,12 @@
     "tailwindcss": "^3.2.4",
     "webpack": "^5.75.0"
   },
+  
   "jest":{
     "collectCoverageFrom":[
-      "src/components/*/.{ts,tsx}",
-      "!*/.stories.{ts,tsx}"
+      "src/components/**/*.{ts,tsx}",
+      "src/pages/**/*.{ts,tsx}",
+      "!**/*.stories.{ts,tsx}"
     ]
   }
 }
