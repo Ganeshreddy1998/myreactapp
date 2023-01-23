@@ -14,7 +14,14 @@ const GutterRoot = styled(Grid)`
 const Gutter = (props: propTypes) => {
   const { children, style } = props;
   return (
-    <GutterRoot item container xs={10} lg={11} style={style}>
+    <GutterRoot
+      item
+      container
+      xs={10}
+      lg={11}
+      style={style}
+      data-testid="Gutter-test"
+    >
       {children}
     </GutterRoot>
   );

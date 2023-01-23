@@ -8,7 +8,7 @@ scanner(
       "sonar.projectName": "myreactapp",
       "sonar.projectDescription": "React POC",
       "sonar.projectKey": "myreactapp",
-      "sonar.projectVersion": "0.0.1",
+      "sonar.projectVersion": "",
       "sonar.exclusions": "",
       "sonar.sourceEncoding": "UTF-8",
     },

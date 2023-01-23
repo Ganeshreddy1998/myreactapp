@@ -7,7 +7,7 @@ import HeadingLinkLayout from "../../components/organisms/HeadingLinklayout/Head
 // import { SearchBar } from '../../components/homepage/search.bar'
 import Navbar from "../../components/organisms/Navbar/Navbar";
 import Gutter from "../../components/templates/Gutter";
-import WhyChooseUs from "./WhyChooseUs";
+import WhyChooseUs from "./WhyChooseUs/index";
 
 const InnerRoot = styled.div`
   width: 100%;

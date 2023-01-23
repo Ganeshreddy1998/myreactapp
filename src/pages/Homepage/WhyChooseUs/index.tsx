@@ -1,11 +1,11 @@
 import styled from "@emotion/styled";
 import { Grid } from "@mui/material";
 import React from "react";
-import Icon from "../../components/atoms/Icon/Icon";
-import Typography from "../../components/atoms/Typography/Typography";
-import FullWidthColoredContainer from "../../components/molecules/FullWidthColoredContainer/FullWidthColoredContainer";
-import Gutter from "../../components/templates/Gutter";
-import { colors } from "../../constants";
+import Icon from "../../../components/atoms/Icon/Icon";
+import Typography from "../../../components/atoms/Typography/Typography";
+import FullWidthColoredContainer from "../../../components/molecules/FullWidthColoredContainer/FullWidthColoredContainer";
+import Gutter from "../../../components/templates/Gutter";
+import { colors } from "../../../constants";
 
 const items = [
   { icon: "test", label: "1600+ Tests" },
