@@ -43,5 +43,4 @@ describe("Buttom Atom", () => {
     const el = screen.getByTestId("custom-button");
     expect(el).toHaveStyle(`colors:${colors.red_200}`);
   });
-  
 });
