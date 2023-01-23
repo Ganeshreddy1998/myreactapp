@@ -83,8 +83,9 @@
   },
   "jest":{
     "collectCoverageFrom":[
-      "src/components/*/.{ts,tsx}",
-      "!*/.stories.{ts,tsx}"
+      "src/components/**/*.{ts,tsx}",
+      "src/pages/**/*.{ts,tsx}",
+      "!**/*.stories.{ts,tsx}"
     ]
   }
 }
