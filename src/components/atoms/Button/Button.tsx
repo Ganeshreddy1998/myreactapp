@@ -7,6 +7,7 @@ interface propTypes {
   variant: "white" | "blue" | "red_text";
   children: ReactNode;
   onClick: MouseEventHandler;
+  dataTestid?: string;
 }
 
 const StyledButton = styled(MuiButton)`
@@ -49,23 +50,32 @@ const StyledErrorButton = styled(MuiButton)`
 `;
 
 const Button = (props: propTypes) => {
-  const { variant, children, onClick } = props;
+  const { variant, children, onClick, dataTestid } = props;
   switch (variant) {
     case "white":
       return (
-        <StyledButton onClick={onClick} data-testid="custom-button">
+        <StyledButton
+          onClick={onClick}
+          data-testid={dataTestid ? dataTestid : "custom-button"}
+        >
           {children}
         </StyledButton>
       );
     case "blue":
       return (
-        <StyledBlueButton onClick={onClick} data-testid="custom-button">
+        <StyledBlueButton
+          onClick={onClick}
+          data-testid={dataTestid ? dataTestid : "custom-button"}
+        >
           {children}
         </StyledBlueButton>
       );
     case "red_text":
       return (
-        <StyledErrorButton onClick={onClick} data-testid="custom-button">
+        <StyledErrorButton
+          onClick={onClick}
+          data-testid={dataTestid ? dataTestid : "custom-button"}
+        >
           {children}
         </StyledErrorButton>
       );

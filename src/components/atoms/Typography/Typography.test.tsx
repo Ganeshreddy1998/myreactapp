@@ -31,4 +31,10 @@ describe("Typography Atom", () => {
       'fontSize: "12px",fontWeight: 600,lineHeight: "18px"'
     );
   });
+
+  test("Type lg should have correct font sizes", () => {
+    render(<Typography type="lg">TypographyText</Typography>);
+    const el = screen.getByTestId("typography-test");
+    expect(el).toHaveStyle('fontSize: "6rem",fontWeight: 300');
+  });
 });

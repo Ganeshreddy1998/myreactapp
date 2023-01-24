@@ -10,7 +10,7 @@ describe("Tag Atom", () => {
   });
 
   test("Tag should be have seperate styles when active", () => {
-    render(<Tag active={true}>tagchildren</Tag>);
+    render(<Tag active="true">tagchildren</Tag>);
     const el = screen.getByTestId("chip-tag");
     expect(el).toHaveStyle(`backgroundColor:${colors.blue_800}`);
   });

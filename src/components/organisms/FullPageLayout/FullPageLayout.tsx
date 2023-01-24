@@ -8,15 +8,9 @@ import Button from "../../atoms/Button/Button";
 
 const style = {
   position: "absolute" as "absolute",
-  //   top: "50%",
-  //   left: "50%",
-  //   transform: "translate(-50%, -50%)",
   width: "100%",
   height: "100%",
   bgcolor: "white",
-  //   border: "2px solid #000",
-  //   boxShadow: 24,
-  //   p: 4,
   overflowY: "scroll",
 };
 
@@ -35,14 +29,10 @@ const FullPageLayout: React.FC<props> = ({
   currentStep,
   setCurrentStep,
 }) => {
-  console.log({ currentStep });
-  //   const [open, setOpen] = React.useState(true);
-  //   const handleOpen = () => setOpen(true);
-  //   const handleClose = () => setOpen(false);
-
   return (
     <div>
       <Modal
+        data-testid="modal"
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
         open={open}
@@ -54,7 +44,7 @@ const FullPageLayout: React.FC<props> = ({
         }}
       >
         <Fade in={open}>
-          <Box sx={style}>
+          <Box sx={style} data-testid="modal-box">
             <Gutter style={{ marginBottom: "70px" }}>
               <Grid sx={{ width: "100%" }}>
                 <Grid sx={{ py: "24px" }}>
@@ -106,6 +96,7 @@ const FullPageLayout: React.FC<props> = ({
                   </Grid>
                   <Grid item>
                     <Button
+                      dataTestid="next-button"
                       variant="blue"
                       onClick={() => {
                         if (currentStep === 1) {
@@ -116,7 +107,7 @@ const FullPageLayout: React.FC<props> = ({
                       }}
                     >
                       <Typography variant="subtitle2">
-                        {currentStep === 1 ? "Add Patient " : "Go back to Home"}
+                        {currentStep === 1 ? "Add Patient" : "Go back to Home"}
                       </Typography>
                     </Button>
                   </Grid>
