@@ -3,13 +3,13 @@ import { Chip } from "@mui/material";
 import { FC, MouseEventHandler, ReactNode } from "react";
 import { colors } from "../../../constants";
 
-interface props {
+interface Props {
   children: ReactNode;
   active?: boolean;
   onClick?: MouseEventHandler;
 }
 
-const Tag: FC<props> = ({ children, active, onClick }) => {
+const Tag: FC<Props> = ({ children, active, onClick }) => {
   return (
     <StyledChip
       label={children}

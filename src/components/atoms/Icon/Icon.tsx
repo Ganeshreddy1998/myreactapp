@@ -1,6 +1,5 @@
 import React from "react";
-interface propTypes {
-  // path?: string;
+interface PropTypes {
   name:
     | string
     | "cart"
@@ -25,7 +24,7 @@ interface propTypes {
     | "shield";
 }
 
-const Icon = (props: propTypes) => {
+const Icon = (props: PropTypes) => {
   const { name } = props;
   return <img src={`/icons/${name}.svg`} alt={name} />;
 };

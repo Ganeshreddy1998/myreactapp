@@ -5,7 +5,7 @@ import { colors } from "../../../constants";
 import Button from "../../atoms/Button/Button";
 import Typography from "../../atoms/Typography/Typography";
 
-interface propTypes {
+interface PropTypes {
   title: string;
   subTitle: string;
   buttonText: string;
@@ -13,8 +13,8 @@ interface propTypes {
   imageUrl: string;
 }
 
-const BookNowContainer = (props: propTypes) => {
-  const { title, subTitle, buttonText, buttonLink, imageUrl } = props;
+const BookNowContainer = (props: PropTypes) => {
+  const { title, subTitle, buttonText, imageUrl } = props;
   return (
     <Root>
       <Grid container>
@@ -38,7 +38,12 @@ const BookNowContainer = (props: propTypes) => {
             </Typography>
           </div>
           <div>
-            <Button variant="white" onClick={() => {}}>
+            <Button
+              variant="white"
+              onClick={function handleClick() {
+                // This is intentional
+              }}
+            >
               {buttonText}
             </Button>
           </div>

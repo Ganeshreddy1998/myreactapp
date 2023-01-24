@@ -4,7 +4,6 @@ import React from "react";
 import Icon from "../../../components/atoms/Icon/Icon";
 import Typography from "../../../components/atoms/Typography/Typography";
 import FullWidthColoredContainer from "../../../components/molecules/FullWidthColoredContainer/FullWidthColoredContainer";
-import Gutter from "../../../components/templates/Gutter";
 import { colors } from "../../../constants";
 
 const items = [

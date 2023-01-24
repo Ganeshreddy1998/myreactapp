@@ -3,7 +3,7 @@ import React, { ReactNode } from "react";
 import { Typography as Text } from "@mui/material";
 import styled from "@emotion/styled";
 
-interface propTypes {
+interface PropTypes {
   type: "lg" | "md" | "sm" | "xs";
   children: ReactNode;
   color?: "white";
@@ -21,7 +21,7 @@ export const StyledText = styled(Text)<StyledTextTypes>`
     }}
 `;
 
-const Typography = (props: propTypes) => {
+const Typography = (props: PropTypes) => {
   const { type, children, color, style } = props;
   switch (type) {
     case "lg":
