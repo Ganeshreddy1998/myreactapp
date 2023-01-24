@@ -25,7 +25,6 @@ test("when open false no comp", () => {
       FullPageLayout
     </FullPageLayout>
   );
-  //   const el = screen.getByTestId("modal");
   expect(container).toBeEmptyDOMElement;
 });
 
@@ -75,7 +74,7 @@ test("if currentStep is 1 next button should show add patient", () => {
   expect(el).toHaveTextContent("Add Patient");
 });
 test("if currentStep is not 1 next button should show Go back to Home", () => {
-  const { container } = render(
+  const {} = render(
     <FullPageLayout
       open={true}
       handleClose={() => {}}

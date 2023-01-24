@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 import { Grid, IconButton } from "@mui/material";
 import React from "react";
-import { useLocation } from "react-router-dom";
 import Icon from "../../atoms/Icon/Icon";
 import Link from "../../atoms/Link/Link";
 import Gutter from "../../templates/Gutter";
