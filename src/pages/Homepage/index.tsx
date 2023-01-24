@@ -3,9 +3,6 @@ import React from "react";
 import CommonlyBookedTest from "./CommonlyBookedTest/CommonlyBookedTest";
 import SearchBar from "../../components/molecules/SearchBar/SearchBar";
 import BookNowContainer from "../../components/organisms/BookNowContainer/BookNowContainer";
-import HeadingLinkLayout from "../../components/organisms/HeadingLinklayout/HeadingLinkLayout";
-// import { SearchBar } from '../../components/homepage/search.bar'
-import Navbar from "../../components/organisms/Navbar/Navbar";
 import Gutter from "../../components/templates/Gutter";
 import WhyChooseUs from "./WhyChooseUs/index";
 

@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { Grid } from "@mui/material";
-import React, { ReactNode } from "react";
+import React from "react";
 import { colors } from "../../../constants";
 import Button from "../../atoms/Button/Button";
 import Typography from "../../atoms/Typography/Typography";

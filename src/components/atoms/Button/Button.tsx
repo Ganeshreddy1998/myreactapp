@@ -3,7 +3,7 @@ import { Button as MuiButton } from "@mui/material";
 import styled from "@emotion/styled";
 import { colors } from "../../../constants";
 
-interface propTypes {
+interface PropTypes {
   variant: "white" | "blue" | "red_text";
   children: ReactNode;
   onClick: MouseEventHandler;
@@ -49,7 +49,7 @@ const StyledErrorButton = styled(MuiButton)`
   }
 `;
 
-const Button = (props: propTypes) => {
+const Button = (props: PropTypes) => {
   const { variant, children, onClick, dataTestid } = props;
   switch (variant) {
     case "white":
