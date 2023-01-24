@@ -1,6 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import FullPageLayout from "./FullPageLayout";
-function handleClick() {}
+function handleClick() {
+  // This is intentional
+}
 
 test("renders correctly", () => {
   render(

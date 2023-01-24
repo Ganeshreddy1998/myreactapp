@@ -2,12 +2,14 @@ import { render, screen } from "@testing-library/react";
 import Button from "./Button";
 import { colors } from "../../../constants";
 
-function handleClick() {}
+function handleClick() {
+  // This is intentional
+}
 
 describe("Buttom Atom", () => {
   test("Children should be shown when passed", () => {
     render(
-      <Button variant="blue" onClick={() => {}}>
+      <Button variant="blue" onClick={handleClick}>
         ButtonText
       </Button>
     );
