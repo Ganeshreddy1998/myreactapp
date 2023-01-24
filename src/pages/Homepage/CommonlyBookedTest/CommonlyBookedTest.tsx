@@ -37,7 +37,6 @@ const CommonlyBookedTest = () => {
   const [steps, setSteps] = useState([{ step: 1, label: "" }, { step: 2 }]);
   const [currentStep, setCurrentStep] = useState(1);
   const [currentLabel, setCurrentLabel] = useState("");
-  // console.log({ steps });
   const [showPage, setShowPage] = useState(false);
   return (
     <div>
@@ -76,7 +75,6 @@ const CommonlyBookedTest = () => {
                 if (item.text === "Covid RTPCR") {
                   setShowPage(true);
                 }
-                // setSteps(steps.map(step => ))
               }}
             >
               <IconCard>

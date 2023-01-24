@@ -2,5 +2,5 @@ projectKey=myreactapp
 serverUrl=http://localhost:9000
 serverVersion=9.8.0.63668
 dashboardUrl=http://localhost:9000/dashboard?id=myreactapp
-ceTaskId=AYXjVmZ-Tjx9ihyGK-0B
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYXjVmZ-Tjx9ihyGK-0B
+ceTaskId=AYXjZA34Tjx9ihyGK-0C
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYXjZA34Tjx9ihyGK-0C
