@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import React, { ReactNode } from "react";
 import { colors } from "../../../constants";
 
-interface propTypes {
+interface PropTypes {
   children: ReactNode;
   href: string;
   target?: "_blank";
@@ -42,7 +42,7 @@ const ATag = styled.a`
   }
 `;
 
-const Link = (props: propTypes) => {
+const Link = (props: PropTypes) => {
   const { children, href, target, active } = props;
   return (
     <Root>

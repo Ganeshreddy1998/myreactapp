@@ -4,12 +4,12 @@ import { colors } from "../../../constants";
 import Typography from "../../atoms/Typography/Typography";
 import Gutter from "../../templates/Gutter";
 
-interface propTypes {
+interface PropTypes {
   children: ReactNode;
   title?: string;
 }
 
-const FullWidthColoredContainer: FC<propTypes> = ({ children, title }) => {
+const FullWidthColoredContainer: FC<PropTypes> = ({ children, title }) => {
   return (
     <Root>
       <Gutter>
