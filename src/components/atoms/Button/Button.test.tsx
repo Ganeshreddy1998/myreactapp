@@ -1,4 +1,4 @@
-import { getByTestId, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import Button from "./Button";
 import { colors } from "../../../constants";
 
@@ -10,7 +10,6 @@ describe("Buttom Atom", () => {
       </Button>
     );
     const el = screen.getByTestId("custom-button");
-    // console.log({ el });
     expect(el).toContainHTML("ButtonText");
   });
 
