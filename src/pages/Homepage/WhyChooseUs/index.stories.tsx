@@ -12,8 +12,3 @@ export default {
 const Template: ComponentStory<typeof WhyChooseUs> = (args) => (
   <WhyChooseUs></WhyChooseUs>
 );
-
-export const Primary = Template.bind({});
-// Primary.args = {
-
-// };

@@ -12,8 +12,3 @@ export default {
 const Template: ComponentStory<typeof Homepage> = (args) => (
   <Homepage></Homepage>
 );
-
-export const Primary = Template.bind({});
-// Primary.args = {
-
-// };
