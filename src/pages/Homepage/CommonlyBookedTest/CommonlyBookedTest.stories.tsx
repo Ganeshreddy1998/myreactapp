@@ -12,8 +12,3 @@ export default {
 const Template: ComponentStory<typeof CommonlyBookedTest> = (args) => (
   <CommonlyBookedTest></CommonlyBookedTest>
 );
-
-export const Primary = Template.bind({});
-// Primary.args = {
-
-// };
