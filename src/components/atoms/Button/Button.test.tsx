@@ -2,6 +2,8 @@ import { render, screen } from "@testing-library/react";
 import Button from "./Button";
 import { colors } from "../../../constants";
 
+function handleClick() {}
+
 describe("Buttom Atom", () => {
   test("Children should be shown when passed", () => {
     render(
@@ -15,7 +17,7 @@ describe("Buttom Atom", () => {
 
   test("button with variant blue should be shown have blue background", () => {
     render(
-      <Button variant="blue" onClick={() => {}}>
+      <Button variant="blue" onClick={handleClick}>
         ButtonText
       </Button>
     );
@@ -25,7 +27,7 @@ describe("Buttom Atom", () => {
 
   test("button with variant white should be shown have white background", () => {
     render(
-      <Button variant="white" onClick={() => {}}>
+      <Button variant="white" onClick={handleClick}>
         ButtonText
       </Button>
     );
@@ -35,7 +37,7 @@ describe("Buttom Atom", () => {
 
   test("button with variant red_text should be shown have red text", () => {
     render(
-      <Button variant="red_text" onClick={() => {}}>
+      <Button variant="red_text" onClick={handleClick}>
         ButtonText
       </Button>
     );
@@ -45,7 +47,7 @@ describe("Buttom Atom", () => {
 
   test("button with variant red_text should be shown have red text", () => {
     render(
-      <Button variant="red_text" onClick={() => {}} dataTestid="new-testid">
+      <Button variant="red_text" onClick={handleClick} dataTestid="new-testid">
         ButtonText
       </Button>
     );

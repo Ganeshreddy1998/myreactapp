@@ -1,13 +1,14 @@
 import { render, screen } from "@testing-library/react";
 import FullPageLayout from "./FullPageLayout";
+function handleClick() {}
 
 test("renders correctly", () => {
   render(
     <FullPageLayout
       open={true}
-      handleClose={() => {}}
+      handleClose={handleClick}
       currentStep={1}
-      setCurrentStep={() => {}}
+      setCurrentStep={handleClick}
     >
       FullPageLayout
     </FullPageLayout>
@@ -18,9 +19,9 @@ test("when open false no comp", () => {
   const { container } = render(
     <FullPageLayout
       open={false}
-      handleClose={() => {}}
+      handleClose={handleClick}
       currentStep={1}
-      setCurrentStep={() => {}}
+      setCurrentStep={handleClick}
     >
       FullPageLayout
     </FullPageLayout>
@@ -32,9 +33,9 @@ test("when open is true show component", () => {
   const { container } = render(
     <FullPageLayout
       open={true}
-      handleClose={() => {}}
+      handleClose={handleClick}
       currentStep={1}
-      setCurrentStep={() => {}}
+      setCurrentStep={handleClick}
     >
       FullPageLayout
     </FullPageLayout>
@@ -46,9 +47,9 @@ test("when open is modal should have style", () => {
   render(
     <FullPageLayout
       open={true}
-      handleClose={() => {}}
+      handleClose={handleClick}
       currentStep={1}
-      setCurrentStep={() => {}}
+      setCurrentStep={handleClick}
     >
       FullPageLayout
     </FullPageLayout>
@@ -62,9 +63,9 @@ test("if currentStep is 1 next button should show add patient", () => {
   render(
     <FullPageLayout
       open={true}
-      handleClose={() => {}}
+      handleClose={handleClick}
       currentStep={1}
-      setCurrentStep={() => {}}
+      setCurrentStep={handleClick}
     >
       FullPageLayout
     </FullPageLayout>
@@ -77,9 +78,9 @@ test("if currentStep is not 1 next button should show Go back to Home", () => {
   const { container } = render(
     <FullPageLayout
       open={true}
-      handleClose={() => {}}
+      handleClose={handleClick}
       currentStep={2}
-      setCurrentStep={() => {}}
+      setCurrentStep={handleClick}
     >
       FullPageLayout
     </FullPageLayout>
